@@ -1,0 +1,47 @@
+
+
+H1{
+    display: flex;
+    font-size: 80px;
+    font-family: var(--font-titulo);
+    color: var(--color-rosa-medio);
+
+}
+
+#caixas a
+{
+    display: block;
+    position: relative;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px 12px;
+    border-color: blue;
+    
+   
+
+
+}
+
+#caixas img
+{
+
+    width: 5%;
+
+
+}
+
+#caixas
+{
+
+    width: 80%;
+    
+
+
+}
+main{
+
+    display: flex;
+    justify-content: space-evenly;
+
+}

@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Sofia-Regular";
-    src: url(../fontes/Sofia-Regular.ttf);
+    src: url(/fontes/Sofia-Regular.ttf);
 }
 
 :root {
