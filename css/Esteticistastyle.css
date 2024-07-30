@@ -1,47 +1,99 @@
 
 
-H1{
-    display: flex;
-    font-size: 80px;
+
+
+.Header
+{   
+    display: grid;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: rgb(255, 0, 21);
+    border-style: dashed;
+    
+
+
+}
+
+.Header h1 {
+
+    
+    font-size: 50px;
     font-family: var(--font-titulo);
     color: var(--color-rosa-medio);
-
-}
-
-#caixas a
-{
-    display: block;
-    position: relative;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-radius: 5px;
-    border-width: 5px 12px;
-    border-color: blue;
-    
+   justify-self: flex-end;
    
-
-
 }
 
-#caixas img
+#MenuEsteticista
 {
 
-    width: 5%;
+    display: flex;
+    justify-self: flex-start;
 
 
 }
 
-#caixas
+.Header div 
 {
-
-    width: 80%;
-    
+    margin-top: -50px;
 
 
 }
+
+
+
 main{
 
     display: flex;
+    width: 80vw;
     justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+    
+     
 
 }
+
+.icones{
+
+    width: 90%;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: blue;
+    border-style: dashed;
+    
+
+}
+
+.icones a
+{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+
+
+    
+
+
+}
+
+.icones img{
+    display: block;
+    width: 100%;
+
+
+}
+
+.Div1
+{
+    display: block;
+    width: 20%;
+    gap: 30px;
+
+
+
+}
+
+
