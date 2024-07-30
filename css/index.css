@@ -1,0 +1,41 @@
+nav{
+
+    display: flex;
+    justify-content: center;
+    width: 1530px;
+
+}
+
+
+main{
+
+width: 1530px;
+
+}
+div{
+
+display: flex;
+justify-content: center;
+width: 1530px;
+
+}
+
+section{
+
+display: flex;
+justify-content: center;
+width: 1530px;
+
+}
+
+body{
+
+    background-image: linear-gradient(white,#dcb7beff);
+   
+
+}
+html{
+
+    height: 100%;
+
+}
