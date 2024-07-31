@@ -1,62 +1,74 @@
-body{
-    background-image: linear-gradient(white,#dcb7beff);
-    height: 100vh;
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.conteiner{
- 
+body {
+    background-image: linear-gradient(white, #dcb7beff);
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100%; 
+}
+
+.conteiner {
     display: grid;
     justify-content: center;
-    grid-template-areas:'sobrenos paravoce contatos contatos cadastro entrar';
+    grid-template-areas: 
+        'sobrenos paravoce contatos'
+        'sobrenos paravoce contatos'
+        'cadastro entrar entrar';
     gap: 32px;
-    width: 1530px;
+    width: 100%;
+    max-width: 1530px;
+    margin: 0 auto;
 }
 
-#sobrenos{
+#sobrenos {
     grid-area: sobrenos;
 }
-#paravoce{
+
+#paravoce {
     grid-area: paravoce;
 }
-#contatos{
+
+#contatos {
     grid-area: contatos;
- 
 }
 
-.top_minusculo{
+.top_minusculo {
     font-family: "Poppins-Regular";
     color: var(--color-rosa-escuro1);
 }
-#conta{
-padding: 0px 160px 0px 0px;
+
+#conta {
+    padding: 0 5% 0 0;
 }
 
-.titulo{
+.titulo {
     font-size: 2rem;
     font-family: var(--font-subtitulo);
     color: var(--color-rosa-escuro1);
     text-align: center;
-    margin: 2rem ;
-    border: 1rem;
+    margin: 2rem;
     padding: 10px;
 }
 
-
-
 .container-img {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 20%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto; 
-    
+    margin: 0 auto;
 }
 
 .inner {
-    width: 350px; 
-    height: 350px; 
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1 / 1;
 }
 
 .image {
@@ -64,10 +76,10 @@ padding: 0px 160px 0px 0px;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
-.botao-corporal{
+.botao-corporal, .botao-facial, .botao-voltar {
     height: 50px;
     width: 180px;
     font-family: var(--font-subtitulo);
@@ -79,44 +91,98 @@ padding: 0px 160px 0px 0px;
     border-radius: 5px;
 }
 
-.botoes-area{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 50%; 
+.botoes-area {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
     width: 100%;
     max-width: 1000px;
-    margin: 100px; 
-
+    margin: 100px auto;
 }
 
-.area-bota-voltar{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; 
+    width: 100%;
+    max-width: 1000px;
 }
 
-.botao-facial{
-    height: 50px;
-    width: 180px;
-    font-family: var(--font-subtitulo);
-    font-size: 1.5rem;
-    background-color: var(--color-rosa-escuro1);
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+@media (max-width: 1024px) {
+    .conteiner {
+        grid-template-areas:
+            'sobrenos sobrenos contatos'
+            'paravoce paravoce contatos'
+            'cadastro cadastro cadastro';
+    }
 }
-.botao-voltar{
-    height: 50px;
-    width: 180px;
-    font-family: var(--font-subtitulo);
-    font-size: 1.5rem;
-    background-color: var(--color-rosa-escuro1);
-    color: white;
-    margin: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+
+@media (max-width: 768px) {
+    .conteiner {
+        grid-template-areas:
+            'sobrenos'
+            'paravoce'
+            'contatos';
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .inner {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .botao-corporal, .botao-facial, .botao-voltar {
+        width: 150px;
+        font-size: 1.2rem;
+    }
+
+    .botoes-area {
+        margin: 50px auto;
+    }
 }
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    .inner {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .botao-corporal, .botao-facial, .botao-voltar {
+        width: 120px;
+        font-size: 1rem;
+    }
+
+    .botoes-area {
+        margin: 30px auto;
+    }
+}
+
+
+
+
+/* hoover adicionar cor botão hoover nas variaveis
+.botao-voltar:hover{
+    background-color: var();
+}
+.botao-facial:hover{
+    background-color: var();
+}
+.botao-corporal{
+    background-color: var();
+}
+*/ 
+
+
+
+
 
