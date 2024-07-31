@@ -1,0 +1,122 @@
+body{
+    background-image: linear-gradient(white,#dcb7beff);
+    height: 100vh;
+}
+
+.conteiner{
+ 
+    display: grid;
+    justify-content: center;
+    grid-template-areas:'sobrenos paravoce contatos contatos cadastro entrar';
+    gap: 32px;
+    width: 1530px;
+}
+
+#sobrenos{
+    grid-area: sobrenos;
+}
+#paravoce{
+    grid-area: paravoce;
+}
+#contatos{
+    grid-area: contatos;
+ 
+}
+
+.top_minusculo{
+    font-family: "Poppins-Regular";
+    color: var(--color-rosa-escuro1);
+}
+#conta{
+padding: 0px 160px 0px 0px;
+}
+
+.titulo{
+    font-size: 2rem;
+    font-family: var(--font-subtitulo);
+    color: var(--color-rosa-escuro1);
+    text-align: center;
+    margin: 2rem ;
+    border: 1rem;
+    padding: 10px;
+}
+
+
+
+.container-img {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20%; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
+    
+}
+
+.inner {
+    width: 350px; 
+    height: 350px; 
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.botao-corporal{
+    height: 50px;
+    width: 180px;
+    font-family: var(--font-subtitulo);
+    font-size: 1.5rem;
+    background-color: var(--color-rosa-escuro1);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botoes-area{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 50%; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px; 
+
+}
+
+.area-bota-voltar{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.botao-facial{
+    height: 50px;
+    width: 180px;
+    font-family: var(--font-subtitulo);
+    font-size: 1.5rem;
+    background-color: var(--color-rosa-escuro1);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.botao-voltar{
+    height: 50px;
+    width: 180px;
+    font-family: var(--font-subtitulo);
+    font-size: 1.5rem;
+    background-color: var(--color-rosa-escuro1);
+    color: white;
+    margin: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
