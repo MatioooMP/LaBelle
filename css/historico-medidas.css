@@ -1,0 +1,90 @@
+        body {
+            background-image: linear-gradient(white, #dcb7beff);
+            height: 100vh;
+        }
+        
+        header {
+            background-color: var(--color-rosa-escuro1);
+            padding: 5px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h2 {
+            font-family: var(--font-subtitulo);
+            font-weight: bold;
+            color: var(--color-branco);
+            font-size: 40px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .form-section {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .form-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+        }
+        
+        label {
+            font-weight: regular;
+            color: var(--color-rosa-escuro1);
+            font-family: var(--font-escrita);
+            margin-bottom: 5px;
+        }
+        
+        .form-observacoes {
+            justify-content: center;
+            padding: 30px;
+            border-radius: 40px;
+            margin-top: 25px;
+        }
+        
+        .form-buttons {
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+        
+        .buttons {
+            font-family: var(--font-subtitulo);
+            color: var(--color-branco);
+            font-weight: bold;
+        }
+        
+        input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        
+        @media (max-width: 1200px) {
+            .form-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .form-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 600px) {
+                .form-container {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
