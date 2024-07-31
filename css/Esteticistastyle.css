@@ -1,16 +1,27 @@
+body
+{   
+    width: 100vw;
+    BOX-SIZING: border-box;
+    height: 98vh;
+    
+    
+    
+    background-image: linear-gradient( #FAFAFA ,#dcB7BEFF);
 
+
+}
 
 
 
 .Header
 {   
-    display: grid;
-    width: 100%;
-    border-radius: 5px;
-    border-width: 5px;
+    display: flex;
+    width: 100vw;
+   
     border-color: rgb(255, 0, 21);
     border-style: dashed;
-    
+    justify-content: space-between;
+    align-items: center;
 
 
 }
@@ -36,9 +47,33 @@
 
 .Header div 
 {
-    margin-top: -50px;
+   
 
 
+}
+
+.Header img{
+
+ width: 100%;
+ border-width: 5px;
+    border-color: rgb(0, 183, 255);
+    border-style: dashed;
+    justify-content: space-between;
+
+
+}
+
+#grid-img 
+{   
+   
+    margin-bottom: 28px;
+    
+    border-color: rgb(49, 190, 79);
+    border-style: dashed;
+    justify-content: space-between;
+    width: 20%;
+    
+   
 }
 
 
@@ -46,11 +81,15 @@
 main{
 
     display: flex;
+  
     width: 80vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: auto;
     flex-wrap: wrap;
-    
+    gap: 30%;
+   
+    align-items: center;
+ 
      
 
 }
@@ -95,5 +134,21 @@ main{
 
 
 }
+
+
+#Lista{
+
+    border-radius: 5px;
+   
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-image: lightblue;
+    }
+  }
 
 
