@@ -5,49 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <section class="topo">
         <header>
-            <nav>
-                <h2>Sobre Nós</h2>
-                <h2>Para Voce</h2>
-                <h2>Contato</h2>
-                <h2>Cadastre-se</h2>
-                <h2>Entrar</h2>
-            </nav>
+            <div class="conteiner">
+                <div>
+                    <nav id="sobrenos" class="top_minusculo">Sobre Nós</nav>
+                </div>
+                <div>
+                    <nav id="paravoce" class="top_minusculo">Para Voce</nav>
+                </div>
+                <div id="conta">
+                    <nav id="Contato" class="top_minusculo">Contato</nav>
+                </div>
+                <div>
+                    <nav id="cadastro">Cadastre-se</nav>
+                </div>
+                <div>
+                    <nav id="entrar" >Entrar</nav>
+                </div>
+            </div>
         </header>
     </section>
     <main>
         <section>
-            <div>
-                
-                <h1>La Belle</h1>
-                <h2>Sua beleza, sua agenda!</h2>
-            
-            </div>
-
-            <div>
-                
-                <img src="./imagens/corpo.png" alt="imagen de um corpo de mulher">
-                <img src="./imagens/rosto.png" alt="imagen de um rosto de mulher">
-                
-            </div>
-
-            <div>
-                
-                <h1>Sobre nós</h1>
-
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, tempore tenetur? Amet, 
-                    tempore blanditiis vero modi rerum exercitationem itaque doloremque voluptates natus 
-                    quod ad facilis facere illum quo obcaecati sint?
-                </h2>
-
+            <div class="conteiner_sobrenos">
+                <div id="logo">
+                    <h1 class="logo">La Belle</h1>
+                    <h2>Sua beleza, sua agenda!</h2>
+                </div>
+                <div id="imagen">
+                    <img src="./imagens/rostoecorpo.png" alt="imagen de um corpo e de um rosto de mulher">
+                </div>
+                <div id="sobre">
+                    <h1>Sobre nós</h1>
+                    <h2>
+                        Lorem ipsum, dolor sit aAd, tempore tenetur? Amet, 
+                        tempore blandi titaque doloremque voluptates natus 
+                        quod ad facilis fac ere illum quo obcaecati sint?
+                    </h2>
+                </div>
             </div>
         </section>
 
-        <section>
+        <!-- <section>
        
             <h1>Nossos Serviços</h1>
             
@@ -56,14 +60,15 @@
                 
                 <h1>Facial</h1>
                 
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, tempore tenetur? Amet, 
+                <h2>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, tempore tenetur? Amet, 
                     tempore blanditiis vero modi rerum exercitationem itaque doloremque voluptates natus 
                     quod ad facilis facere illum quo obcaecati sint?
                 </h2>
 
             </div>
 
-        </section>
+        </section> -->
     </main>
 </body>
 </html>
