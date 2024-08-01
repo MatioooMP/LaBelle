@@ -1,4 +1,9 @@
 
+body{
+    height: 100vh;
+    background-image: linear-gradient(var(--color-branco), var(--color-rosa-claro1), var(--color-rosa-medio));    
+}
+
 header{
     margin: 20px 0 0 20px;
     display: flex;
@@ -47,12 +52,21 @@ h1{
 }
 
 .img_anamnese{
+    margin-top: 50px;
     display: flex;
-    width: 300px;         
+    width: 200px;
+    border: 2px solid #000;
+    background: #6E2E44;         
 }
 
 form{
+    padding-bottom: 20px;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    ". . . ."
+    ". . . ." 
+    ". . . ."
+    ". . botoes botoes";    
     display: grid;
     margin: auto;
     align-items: center;
@@ -61,6 +75,31 @@ form{
     gap: 30px;
 }
 
-.inputs{
-    padding: 16px;    
+.inputs{    
+    padding: 20px;
+    border-radius: 15px;
+    border: 0.5px solid var(--Black, #000);
+    background: #FAFAFA;
+    color: var(--color-rosa-escuro1);
+    font-family: var(--font-escrita);
+    font-size: 1rem;      
+}
+
+.grid_area_btns {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: botoes;
+    width: 100%;
+    gap: 84px;
+}
+
+.btns {
+    color: white;
+    padding: 10px; 
+    width: 251px;
+    border-radius: 10px;
+    border-color: var(--color-rosa-escuro1);
+    background: var(--color-rosa-escuro1);
+    font-family: var(--font-subtitulo);
+    font-size: 1rem;         
 }
