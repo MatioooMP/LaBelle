@@ -83,6 +83,7 @@
         border: var(--color-branco);
         border-radius: 5px;
         box-sizing: border-box;
+        resize: vertical;
     }
     
     .form-buttons {
@@ -133,5 +134,8 @@
         .form-buttons {
             flex-direction: column;
             gap: 1rem;
+        }
+        textarea {
+            width: 90%;
         }
     }
