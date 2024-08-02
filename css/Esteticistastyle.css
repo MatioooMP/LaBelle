@@ -26,7 +26,7 @@ body
 
 }
 
-.Header h1 {
+Header h1 {
 
     
     font-size: 50px;
@@ -87,7 +87,7 @@ main{
     margin: auto;
     flex-wrap: wrap;
     gap: 30%;
-   
+    height: 80%;
     align-items: center;
  
      
@@ -136,19 +136,161 @@ main{
 }
 
 
-#Lista{
+.Header ul{
 
     border-radius: 5px;
-   
+    margin-left: 15px;
 
 
 }
 
 
-@media only screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 383px) {
     body {
-      background-image: lightblue;
+      background-image: linear-gradient(white, white);
     }
+
+    
+   
   }
 
 
+
+
+@media screen and (max-width: 431px) {
+
+    .Header h1
+    {
+
+
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    .Header img {
+
+       width:50%;
+
+    }
+
+}
+
+@media screen and (max-width: 383px)
+{
+
+    .Header h1 {
+
+
+        font-size: 28px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 345px)
+{
+
+    .Header h1 {
+
+
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 512px)
+{
+
+    .icones img{
+
+        width: 120%;
+
+    }
+
+    .icones a
+    {
+
+
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 308px)
+{
+
+    .icones a
+    {
+
+
+        font-size: 16px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 473px)
+{
+
+    .icones img{
+
+        width: 140%;
+
+    }
+
+
+}
+
+@media screen and (max-width: 300px)
+{
+
+    .icones img{
+
+        width: 190%;
+
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+    .Header ul{
+
+    font-size: 14px;
+
+    }
+
+    .Header p
+    {
+
+
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px)
+{
+
+    .Header p{
+
+        font-size: 9px;
+
+
+    }
+
+
+
+}
