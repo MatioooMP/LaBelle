@@ -65,8 +65,8 @@ form{
     grid-template-areas:
     ". . . ."
     ". . . ." 
-    ". . . ."
-    ". . botoes botoes";    
+    ". . obs obs"
+    ". . botoes botoes";   
     display: grid;
     margin: auto;
     align-items: center;
@@ -83,6 +83,10 @@ form{
     color: var(--color-rosa-escuro1);
     font-family: var(--font-escrita);
     font-size: 1rem;      
+}
+
+#obs {
+    grid-area: obs;
 }
 
 .grid_area_btns {
