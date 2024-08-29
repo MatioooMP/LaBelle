@@ -28,7 +28,7 @@ body
 
 Header h1 {
 
-    
+    gap: auto;
     font-size: 50px;
     font-family: var(--font-titulo);
     color: var(--color-rosa-medio);
@@ -54,25 +54,25 @@ Header h1 {
 
 .Header img{
 
- width: 100%;
+ width: 50%;
  border-width: 5px;
-    border-color: rgb(0, 183, 255);
-    border-style: dashed;
+    /* border-color: rgb(0, 183, 255);
+    border-style: dashed; */
     justify-content: space-between;
-
-
+    
 }
+
 
 #grid-img 
 {   
    
-    margin-bottom: 28px;
+    /* margin-bottom: 28px;
     
     border-color: rgb(49, 190, 79);
-    border-style: dashed;
+    border-style: dashed; */
     justify-content: space-between;
     width: 20%;
-    
+    display: block;
    
 }
 
@@ -89,6 +89,7 @@ main{
     gap: 30%;
     height: 80%;
     align-items: center;
+    margin-left: 25%;
  
      
 
@@ -97,10 +98,10 @@ main{
 .icones{
 
     width:60%;
-    border-radius: 5px;
+    /* border-radius: 5px;
     border-width: 5px;
     border-color: blue;
-    border-style: dashed;
+    border-style: dashed; */
     
 
 }
@@ -119,8 +120,10 @@ main{
 }
 
 .icones img{
+    height: auto;
     display: block;
     width: 100%;
+    transform: translateY();
 
 
 }
@@ -136,10 +139,19 @@ main{
 }
 
 
-.Header ul{
+#Lista{
 
     border-radius: 5px;
     margin-left: 15px;
+    display: none;
+    transform: translateX(-84%)translateY(50%);
+
+}
+
+#BoasVindas
+{
+    transform: translateX();
+
 
 
 }
@@ -148,12 +160,13 @@ main{
 
 
 
-@media screen and (max-width: 431px)
+@media screen and (max-width: 600px)
 {
 
     main{
 
         gap: 0%;
+        margin-left: 10%;
 
     }
 
@@ -179,13 +192,13 @@ main{
   
   .Header img {
 
-    width:50%;
+    width:80%;
 
  }
 
  .Header p{
 
-    font-size: 9px;
+    font-size: 16px;
 
 
 }
@@ -210,3 +223,5 @@ body {
   }
 
 }
+
+ 
