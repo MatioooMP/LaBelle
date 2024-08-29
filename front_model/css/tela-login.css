@@ -1,0 +1,123 @@
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    font-family: var(--font-subtitulo);
+    font-size: 1.5rem;
+    color: var(--color-rosa-escuro1);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-image: linear-gradient(white,#dcb7beff);
+}
+
+main ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+}
+main div span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    
+    font-family: var(--font-titulo);
+    font-size: 6rem;
+    color: var(--color-rosa-escuro1);
+
+}
+
+.aside {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.aside-title {
+    font-family: var(--font-titulo);
+    font-size: 6rem;
+    color: var(--color-rosa-escuro1);
+}
+
+.aside-subtitle {
+        font-family: var(--font-escrita);
+        font-size: 2.25rem;
+        color: var(--color-rosa-escuro2);
+}
+
+.form-login {
+    width: 468px;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+::placeholder{
+    color: var(--color-rosa-escuro1);
+}
+
+input:nth-child(2){
+    margin-top: 50px;
+}
+
+input:nth-child(3) {
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    width: 259px;
+    padding: 10px;
+    margin-bottom: 2rem;
+    font-family: var(--font-subtitulo);
+
+    background-color: white;
+    color: var(--color-rosa-escuro1);
+}
+
+form a {
+    font-size: 1.5rem;
+    font-family: var(--font-escrita);
+}
+
+#login-form-signin{
+    width: 259px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 0 15px 0;
+    margin-bottom: 40px;
+    color: #FAFAFA;
+    background-color: var(--color-rosa-escuro1);
+}
+
+#login-form-forgot {
+    color: var(--color-rosa-escuro2);
+}
+
+
