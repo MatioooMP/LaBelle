@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Poly-Regular";
+    src: url(../fontes/Poly-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fontes/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Sofia-Regular";
+    src: url(../fontes/Sofia-Regular.ttf);
+}
+
+:root {
+    --font-titulo: "Sofia-Regular";
+    --font-subtitulo: "Poppins-Regular";
+    --font-escrita: "Poly-Regular";
+    
+    --color-rosa-escuro1: #6E2E44;
+    --color-rosa-escuro2: #D991A4;
+    --color-rosa-medio: #FACADA;
+    --color-rosa-claro1: #FFF0F4;
+    --color-branco: #FAFAFA;
+
+    
+}

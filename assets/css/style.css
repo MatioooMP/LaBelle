@@ -1,0 +1,109 @@
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(var(--color-branco), var(--color-rosa-claro1), var(--color-rosa-medio));    
+}
+
+header{
+    margin: 20px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.logo{
+   display: flex;
+   width: 10%;
+   align-items: center;
+   font-family: var(--font-titulo);
+   font-size: 3rem;
+   color: var(--color-rosa-escuro1);
+}
+
+.nav_bar{    
+    width: 70%;    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;    
+    width: 80%;  
+    font-family: var(--font-subtitulo);    
+    font-size: 1rem; 
+}
+
+.menu li a {
+    color: var(--color-rosa-escuro1);
+    font-weight: 550;    
+}
+
+.head_form{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: var(--font-titulo);
+    color: var(--color-rosa-escuro1);
+    font-size: 2.5rem;      
+}
+
+.img_anamnese{
+    margin-top: 50px;
+    display: flex;
+    width: 200px;
+    border: 2px solid #000;
+    background: #6E2E44;         
+}
+
+form{
+    padding-bottom: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    ". . . ."
+    ". . . ." 
+    ". . obs obs"
+    ". . botoes botoes";   
+    display: grid;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 1312px;
+    gap: 30px;
+}
+
+.inputs{    
+    padding: 20px;
+    border-radius: 15px;
+    border: 0.5px solid var(--Black, #000);
+    background: #FAFAFA;
+    color: var(--color-rosa-escuro1);
+    font-family: var(--font-escrita);
+    font-size: 1rem;      
+}
+
+#obs {
+    grid-area: obs;
+}
+
+.grid_area_btns {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: botoes;
+    width: 100%;
+    gap: 84px;
+}
+
+.btns {
+    color: white;
+    padding: 10px; 
+    width: 251px;
+    border-radius: 10px;
+    border-color: var(--color-rosa-escuro1);
+    background: var(--color-rosa-escuro1);
+    font-family: var(--font-subtitulo);
+    font-size: 1rem;         
+}
