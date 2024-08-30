@@ -19,17 +19,17 @@
 
 
 			<a href="javascript:void(0);" id="grid-img" onclick="Apareceu()"> <img src="../Icones/Fa-Light.png"
-					alt=""></a>
+					alt="" style="width: 40%" id="img">  </a>
 			<ul id="Lista" style="display: none;">
 				
-				<li><a href="">Configurações</a> </li>
+				<li><a href="#">Configurações</a> </li>
 				<li> <a href="#">Ajuda</a></li>
 				<li><a href="#">Editar Cadastro</a></li>
 				<li><a href="#">Excluir Conta</a></li>
 				<li><a href="#">Log Out</a></li>
 				
 			</ul>
-			<p id="BoasVindas" style="transform: translate(-20%);">Bem Vinda "" </p>
+			<p id="BoasVindas">Bem Vinda "" </p>
 			<p id="NomeEsteticista"></p>
 		</div>
 		<h1>La belle</h1>
@@ -59,18 +59,44 @@
 
 
 	<script>
-		function Apareceu() {
+
 			var lista = document.getElementById("Lista");
-			var img = document.getElementById("grid-img");
+			var grid_img = document.getElementById("grid-img");
 			var header = document.getElementsByTagName("Header")
 			var paragrafo = document.getElementById("BoasVindas")
 			paragrafo.style.transform = 'translate(-20%)';
+			var img = document.getElementById("img");
+			grid_img.style.height = img.style.height;
+			grid_img.style.widows = img.style.width;
+			var div = document.getElementById("MenuEsteticista");
+			div.style.width = "30%";	
 
-			img.style.display = "fixed";
+			if(window.innerWidth <= 600 && paragrafo.style.transform == 'translate(-20%)' && div.style.width === "30%")
+			{
+				paragrafo.style.transform = "translate(-10%)";
+				
+				
+				
+
+			}
+			else
+			{
+				// paragrafo.style.transform = 'translate(-20%)';
+				// div.style.width = "30%";	
+				// grid_img.style.width = "20%"
+
+			}
+			
+			
+
+		function Apareceu() {
+			var clicou;
+			
+			grid_img.style.display = "fixed";
 			if (lista.style.display === "none") {
 				lista.style.display = "block";
-				img.style.width = "20%";
-				paragrafo.style.transform = 'translate(-155%)';
+				// img.style.width = "20%";
+				paragrafo.style.transform = 'translate(-140%)';
 
 				
 
@@ -78,13 +104,13 @@
 			}
 			else {
 				lista.style.display = "none";
-				img.style.width = "20%";
-				paragrafo.style.transform = 'translate(-20%)';
-			
-
+				
+				paragrafo.style.transform = 'translate(-10%)';	
+				
 			}
 
 		}
+
 
 
 	</script>
