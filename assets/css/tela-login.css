@@ -120,4 +120,10 @@ form a {
     color: var(--color-rosa-escuro2);
 }
 
+#user-pwd-error {
+    font-family: var(--font-escrita);
+    color: var(--color-rosa-escuro1);
+    padding-bottom: 1rem;
+}
+
 
