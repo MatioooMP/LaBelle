@@ -33,8 +33,9 @@
         <div class="head_form">
             <h1>Ficha de avaliação</h1>
             <img class="img_anamnese" src="<?php echo $base?>/assets/images/Frame2.png" alt="Ícone genérico da foto do usuário">
+            <input type="file" name="" value="foto" id="">
         </div>
-        <form action="" method="post">
+        <form action="./anamnese_action.php" method="post">
             <input class="inputs" type="text" name="TratamentoEstetico" placeholder="Já fez tratamento estético?">
             <input class="inputs" type="text" name="AntecedentesAlergicos" placeholder="Antecedentes alérgicos">
             <input class="inputs" type="text" name="AlteracaoHormonal" placeholder="Alterações hormonais">
@@ -49,7 +50,7 @@
 
             <div class="grid_area_btns">
                 <input class="btns btn_back" type="button" value="Voltar">
-                <input class="btns btn_next" type="button" value="Enviar">
+                <input class="btns btn_next" type="submit" value="Enviar">
             </div>
         </form>
 
