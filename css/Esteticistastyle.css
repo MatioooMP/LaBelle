@@ -11,6 +11,16 @@ body
 
 }
 
+a
+{
+text-decoration: none;
+font-family: var(--font-escrita);
+
+color: var(--color-rosa-escuro1);
+font-size: 14px;
+
+}
+
 
 
 .Header
@@ -38,7 +48,7 @@ Header h1 {
 
 #MenuEsteticista
 {
-
+    width: 100vw;
     display: flex;
     justify-self: flex-start;
 
@@ -146,7 +156,7 @@ main{
     border-radius: 5px;
     margin-left: 15px;
     display: none;
-    transform: translateX(-125%)translateY(60%);
+    transform: translateX(-130%)translateY(45%);
 
 }
 
@@ -236,7 +246,25 @@ height: 10%;;
 } */
 
 #Lista{
-    transform: translateX(-111%)translateY(90%);
+    transform: translateX(-97%)translateY(40%)
+
+
+}
+
+.Header
+{
+    width: 100vw;
+
+
+}
+
+#grid-img
+{
+    width:170%;
+}
+
+ul a{
+font-size: 10px;
 
 
 }

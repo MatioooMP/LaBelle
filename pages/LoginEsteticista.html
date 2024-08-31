@@ -19,17 +19,17 @@
 
 
 			<a href="javascript:void(0);" id="grid-img" onclick="Apareceu()"> <img src="../Icones/Fa-Light.png"
-					alt="" style="width: 40%" id="img">  </a>
+					alt="" style="width: 30%" id="img">  </a>
 			<ul id="Lista" style="display: none;">
 				
-				<li><a href="#">Configurações</a> </li>
-				<li> <a href="#">Ajuda</a></li>
-				<li><a href="#">Editar Cadastro</a></li>
-				<li><a href="#">Excluir Conta</a></li>
-				<li><a href="#">Log Out</a></li>
+				<li><a href="Configs">Configurações</a> </li>
+				<li> <a href="Ajuda">Ajuda</a></li>
+				<li><a href="Editar">Editar Cadastro</a></li>
+				<li><a href="Excluir">Excluir Conta</a></li>
+				<li><a href="Log">Log Out</a></li>
 				
 			</ul>
-			<p id="BoasVindas">Bem Vinda "" </p>
+			<p id="BoasVindas">Bem Vinda "teste" </p>
 			<p id="NomeEsteticista"></p>
 		</div>
 		<h1>La belle</h1>
@@ -62,28 +62,28 @@
 
 			var lista = document.getElementById("Lista");
 			var grid_img = document.getElementById("grid-img");
-			var header = document.getElementsByTagName("Header")
-			var paragrafo = document.getElementById("BoasVindas")
+			var header = document.getElementsByTagName("Header");
+			var paragrafo = document.getElementById("BoasVindas");
 			paragrafo.style.transform = 'translate(-20%)';
 			var img = document.getElementById("img");
 			grid_img.style.height = img.style.height;
 			grid_img.style.widows = img.style.width;
 			var div = document.getElementById("MenuEsteticista");
 			div.style.width = "30%";	
-
+			
 			if(window.innerWidth <= 600 && paragrafo.style.transform == 'translate(-20%)' && div.style.width === "30%")
 			{
-				paragrafo.style.transform = "translate(-10%)";
-				
+				paragrafo.style.transform = "translate(-60%)";
+				img.style.width = "30%";
 				
 				
 
 			}
 			else
 			{
-				// paragrafo.style.transform = 'translate(-20%)';
-				// div.style.width = "30%";	
-				// grid_img.style.width = "20%"
+				 paragrafo.style.transform = 'translate(-20%)';
+				 div.style.width = "30%";	
+				 
 
 			}
 			
@@ -96,8 +96,25 @@
 			if (lista.style.display === "none") {
 				lista.style.display = "block";
 				// img.style.width = "20%";
+
+
 				paragrafo.style.transform = 'translate(-140%)';
 
+				if(window.innerWidth <= 600 )
+				{
+					img.style.width = "36px";
+					paragrafo.style.transform = 'translate(-10%)';
+
+
+				}
+				else
+				{
+					img.style.width = "30%";
+					 paragrafo.style.transform = 'translate(-46%)';
+
+
+				}
+				
 				
 
 
@@ -105,7 +122,20 @@
 			else {
 				lista.style.display = "none";
 				
-				paragrafo.style.transform = 'translate(-10%)';	
+
+				 if(widow.innerWidth <=600)
+				 {
+				 	img.style.width = "10%";
+
+				 }
+				 else
+				 {
+				 	img.style.width = "100%";
+				
+				 	paragrafo.style.transform = 'translate(-10%)';
+					
+				 }
+					
 				
 			}
 
