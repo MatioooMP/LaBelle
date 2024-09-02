@@ -1,0 +1,127 @@
+/* Start Nossos serviços*/
+
+.conteiner_servicos{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+    'titulo titulo'
+    'facial perfume'
+    'facial corporal'
+    'facial corporal';
+    max-width: 1530px;
+    height: auto;
+    background-image: url("./../imagens/frasco.png");
+    background-repeat: no-repeat;
+    background-position: 740px 260px;
+    background-size: 55%;
+    
+
+}
+#servicos{
+    grid-area: titulo;
+}
+#facial{
+    grid-area: facial;
+}
+#total{
+    grid-area: corporal;
+}
+#perfume{
+    grid-area: perfume;
+}
+
+.textcorretian{
+
+    font-size: 20px;
+    font-family: Poppins-Regular;
+    font-weight: 600;
+    color: var(--color-rosa-escuro1);
+    width: 450.07px;
+
+}
+.corporal{
+
+    font-size: 2.5rem;
+    font-family: Poly-Regular;
+    color: var(--color-rosa-escuro1);
+    font-weight: 550;
+
+}
+.space{
+
+    margin: 80px 0 80px 0;
+
+}
+.facialconfig{
+
+    display: flex;
+    justify-content:center; 
+    flex-direction: column;
+    
+
+}
+.facialstyle{
+
+    border-bottom: solid 1px;
+
+}
+.corpconfig{
+
+    text-align: end;
+    border-bottom: solid 1px;
+    width: 589px;
+
+}
+.divCorporal{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 589.01px;
+    height: 1509px;
+    background-image: url("./../imagens/mão.png");
+    background-repeat: no-repeat;
+    background-position: -150px 900px;
+    background-size:120% ;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brf{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tiltle{
+
+    margin: 20px 0 20px 0;
+    font-size: 4rem;
+
+}
+
+
+.facial{
+
+    display: flex;
+
+}
