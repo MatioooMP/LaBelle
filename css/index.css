@@ -123,10 +123,17 @@ padding: 0px 40px 0px 0px;
 
 
 /* Config Basica Da Pagina*/
+html{
+
+    scroll-behavior: smooth;
+
+
+}
 body{
 
     max-width: 1530px;
-    margin: auto;    
+    margin: auto;
+    
 
 }
 .titulos{
@@ -166,29 +173,6 @@ body{
 
 
 /* footer start*/
-
-/* .containerfooter{
-
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-template-areas:
-    'fale info rede';
-    align-items:center;
-    justify-content: center;
-    margin: 32px 0 32px 0;
-    width: 1530px;
-
-}
-#fale{
-    grid-area: fale;
-}
-#rede{
-    grid-area: rede;
-}
-#info{
-    grid-area: info;
-} */
-
 .containerfooter{
 
     display: flex;
@@ -230,3 +214,4 @@ body{
     font-weight: 550;
 
 }
+
