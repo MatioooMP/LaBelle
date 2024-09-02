@@ -1,46 +1,50 @@
 <?php
 require __DIR__ . '/../config/config.php';
 
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-$tratamentoEst = filter_input(INPUT_POST, 'TratamentoEstetico', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$antecedenteAlerg = filter_input(INPUT_POST, 'AntecedentesAlergicos', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$alteracaoHorm = filter_input(INPUT_POST, 'AlteracaoHormonal', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$alimentacaoBal = filter_input(INPUT_POST, 'AlimentacaoBalanceada', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$bebidaAlco = filter_input(INPUT_POST, 'BebidaAlcoolica', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$fumante = filter_input(INPUT_POST, 'Fumante', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$medicamentoCont = filter_input(INPUT_POST, 'MedicamentoContinuo', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$gestante = filter_input(INPUT_POST, 'Gestante', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$problemaCardi = filter_input(INPUT_POST, 'ProblemaCardiaco', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$doencaSign = filter_input(INPUT_POST, 'DoencaSignificativa', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$observacoes = filter_input(INPUT_POST, 'Observacao', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $tratamentoEst = filter_input(INPUT_POST, 'TratamentoEstetico', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $antecedenteAlerg = filter_input(INPUT_POST, 'AntecedentesAlergicos', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $alteracaoHorm = filter_input(INPUT_POST, 'AlteracaoHormonal', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $alimentacaoBal = filter_input(INPUT_POST, 'AlimentacaoBalanceada', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $bebidaAlco = filter_input(INPUT_POST, 'BebidaAlcoolica', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $fumante = filter_input(INPUT_POST, 'Fumante', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $medicamentoCont = filter_input(INPUT_POST, 'MedicamentoContinuo', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $gestante = filter_input(INPUT_POST, 'Gestante', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $problemaCardi = filter_input(INPUT_POST, 'ProblemaCardiaco', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $doencaSign = filter_input(INPUT_POST, 'DoencaSignificativa', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $observacoes = filter_input(INPUT_POST, 'Observacao', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-if (
-    $tratamentoEst && $antecedenteAlerg && $alteracaoHorm && $alimentacaoBal && $bebidaAlco && $fumante && $medicamentoCont && $gestante
-    && $problemaCardi && $doencaSign && $observacoes
-) {
+    if (
+        $tratamentoEst && $antecedenteAlerg && $alteracaoHorm && $alimentacaoBal && $bebidaAlco && $fumante && $medicamentoCont && $gestante
+        && $problemaCardi && $doencaSign && $observacoes
+    ) {
 
-    $sql = $pdo->prepare("INSERT INTO Ficha (idCliente, TratamentoEstetico, AntecedentesAlergicos, AlteracaoHormonal, AlimentacaoBalanceada, BebidaAlcoolica,
+        $sql = $pdo->prepare("INSERT INTO Ficha (idCliente, TratamentoEstetico, AntecedentesAlergicos, AlteracaoHormonal, AlimentacaoBalanceada, BebidaAlcoolica,
                                                 Fumante, MedicamentoContinuo, Gestante, ProblemaCardiaco, DoencaSignificativa, Observacao)
                           VALUES (:idCliente, :TratamentoEstetico, :AntecedentesAlergicos, :AlteracaoHormonal, :AlimentacaoBalanceada, :BebidaAlcoolica,
                                     :Fumante, :MedicamentoContinuo, :Gestante, :ProblemaCardiaco, :DoencaSignificativa, :Observacao)");
 
 
-    $sql->bindValue(":idCliente", 1);
-    $sql->bindValue(":TratamentoEstetico", $tratamentoEst);
-    $sql->bindValue(":AntecedentesAlergicos", $antecedenteAlerg);
-    $sql->bindValue(":AlteracaoHormonal", $alteracaoHorm);
-    $sql->bindValue(":AlimentacaoBalanceada", $alimentacaoBal);
-    $sql->bindValue(":BebidaAlcoolica", $bebidaAlco);
-    $sql->bindValue(":Fumante", $fumante);
-    $sql->bindValue(":MedicamentoContinuo", $medicamentoCont);
-    $sql->bindValue(":Gestante", $gestante);
-    $sql->bindValue(":ProblemaCardiaco", $problemaCardi);
-    $sql->bindValue(":DoencaSignificativa", $doencaSign);
-    $sql->bindValue(":Observacao", $observacoes);
-    $sql->execute();
+        $sql->bindValue(":idCliente", 1);
+        $sql->bindValue(":TratamentoEstetico", $tratamentoEst);
+        $sql->bindValue(":AntecedentesAlergicos", $antecedenteAlerg);
+        $sql->bindValue(":AlteracaoHormonal", $alteracaoHorm);
+        $sql->bindValue(":AlimentacaoBalanceada", $alimentacaoBal);
+        $sql->bindValue(":BebidaAlcoolica", $bebidaAlco);
+        $sql->bindValue(":Fumante", $fumante);
+        $sql->bindValue(":MedicamentoContinuo", $medicamentoCont);
+        $sql->bindValue(":Gestante", $gestante);
+        $sql->bindValue(":ProblemaCardiaco", $problemaCardi);
+        $sql->bindValue(":DoencaSignificativa", $doencaSign);
+        $sql->bindValue(":Observacao", $observacoes);
+        $sql->execute();
 
-    header("Location: ./teste.php");
-    exit;
+        header("Location: ./teste.php");
+        exit;
+    } else {
+        $mensagem = "Preencha todos os campos!";
+    }
 } else {
     header("Location: anamnese.php");
     exit;
@@ -81,6 +85,9 @@ if (
             <img class="img_anamnese" src="<?php echo $base ?>/assets/images/Frame2.png" alt="Ícone genérico da foto do usuário">
             <input type="file" name="" value="foto" id="">
         </div>
+        <div id="preencherCampos">
+            <?php echo $mensagem; ?>
+        </div>
         <form action="./anamnese_action.php" method="POST" id="form">
             <input class="inputs" type="text" name="TratamentoEstetico" placeholder="Já fez tratamento estético?">
             <input class="inputs" type="text" name="AntecedentesAlergicos" placeholder="Antecedentes alérgicos">
@@ -95,7 +102,7 @@ if (
             <input class="inputs" id="obs" type="text" name="Observacao" placeholder="Observações">
 
             <div class="grid_area_btns">
-                
+
                 <input class="btns btn_back" type="button" value="Voltar">
                 <input class="btns btn_send" type="submit" value="Enviar">
             </div>

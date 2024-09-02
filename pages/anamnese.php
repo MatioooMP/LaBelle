@@ -35,7 +35,7 @@
             <img class="img_anamnese" src="<?php echo $base?>/assets/images/Frame2.png" alt="Ícone genérico da foto do usuário">
             <input type="file" name="" value="foto" id="">
         </div>
-        <form action="./anamnese_action.php" method="post">
+        <form action="./anamnese_action.php" method="POST">
             <input class="inputs" type="text" name="TratamentoEstetico" placeholder="Já fez tratamento estético?">
             <input class="inputs" type="text" name="AntecedentesAlergicos" placeholder="Antecedentes alérgicos">
             <input class="inputs" type="text" name="AlteracaoHormonal" placeholder="Alterações hormonais">

@@ -1,6 +1,6 @@
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(var(--color-branco), var(--color-rosa-claro1), var(--color-rosa-medio));    
 }
 
@@ -38,7 +38,7 @@ header{
 }
 
 .head_form{
-    padding: 100px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -57,6 +57,14 @@ h1{
     width: 200px;
     border: 2px solid #000;
     background: #6E2E44;         
+}
+
+#preencherCampos {
+    padding-bottom: 50px;    
+    text-align: center;      
+    font-family: var(--font-subtitulo);
+    color: var(--color-rosa-escuro1);    
+    font-size: 1rem;
 }
 
 form{
